@@ -1,5 +1,5 @@
 # doodle
-Simple doodle poll implementation: [https://catherinesyeh.github.io/doodle/](https://catherinesyeh.github.io/doodle/)
+Simple doodle poll implementation for user testing: [https://catherinesyeh.github.io/doodle/](https://catherinesyeh.github.io/doodle/)
 
 ## instructions
 Open [webpage](https://catherinesyeh.github.io/doodle/) to start exploring. The app comes preloaded with some potential meeting times and the availabilities of three made up people.
