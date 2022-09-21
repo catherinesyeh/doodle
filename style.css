@@ -87,25 +87,25 @@ h3 {
 }
 
 h5 {
-    font-size: calc(16px + 0.2vw);
+    font-size: calc(16px + 0.4vw);
     line-height: calc(20px + 1vw);
     font-weight: 600;
 }
 
-a, .link, #order-by span { /* links */
+a, #order-by span, #edit { /* links */
     text-decoration: none;
     color: var(--blue);
     font-weight: 400;
     transition: 0.5s;
 }
 
-a:hover, .link:hover, #order-by span:hover {
+a:hover, #order-by span:hover, #edit:hover {
    opacity: 0.8;
 }
 
 /* MAIN CONTENT */
 #content {
-    margin: calc(20px + 2vw) calc(20px + 2vw);
+    margin: calc(12px + 1.6vw);
     display: grid;
     grid-template-columns: 1fr 3fr;
     border: 1px solid var(--light-gray);
@@ -170,15 +170,38 @@ a:hover, .link:hover, #order-by span:hover {
     background-color: var(--light-gray);
 }
 
-/* SUBMIT BUTTON */
-#submit {
+/* BUTTONS */
+#buttons {
     float: right;
+}
+
+#edit { /* edit button */
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#edit.inactive {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+#submit { /* submit button */
     background-color: var(--blue);
     color: white;
     cursor: pointer;
-    padding: 5px 20px;
+    padding: 5px 15px;
     transition: 0.5s;
     border-radius: 2px;
+    display: inline-block;
+}
+
+#submit.inactive {
+    background-color: var(--gray);
+    pointer-events: none;
 }
 
 #submit:hover {
@@ -244,6 +267,12 @@ a:hover, .link:hover, #order-by span:hover {
 }
 
 /* timeslot styling */
+#times.inactive {
+    pointer-events: none;
+    filter: grayscale(0.5);
+    opacity: 0.8;
+}
+
 .time {
     border-radius: 4px;
     text-align: center;
@@ -263,6 +292,14 @@ a:hover, .link:hover, #order-by span:hover {
 
 .time:hover {
     background-color: var(--light-gray);
+}
+
+.time.yes:hover {
+    background-color: var(--light-green);
+}
+
+.time.maybe:hover {
+    background-color: var(--light-yellow);
 }
 
 .time p {
@@ -297,13 +334,14 @@ a:hover, .link:hover, #order-by span:hover {
     border: 1px solid var(--gray);
     margin-left: auto;
     margin-right: auto;
+    transition: 0.5s;
 }
 
-.checkbox.yes { /* change background when user is available */
+.time.yes .checkbox { /* change background when user is available */
     background-image: url(img/yes.png);
 }
 
-.checkbox.maybe { /* change background when user indicates if need be */
+.time.maybe .checkbox { /* change background when user indicates if need be */
     background-image: url(img/maybe.png);
 }
 
