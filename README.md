@@ -15,6 +15,7 @@ Open [webpage](https://catherinesyeh.github.io/doodle/) to start exploring. The 
 3. **See the availability** of the other participants and the **total count** of who's available at the top of each column
 * This is a distinguishing feature since when to meet has a more heat map view of who's available at any given time
 * Additionally, it's not easy to see all the times when a particular participant is available in when2meet -- you can only see who's available at a given time by hovering over the slot
+* _Note:_ in the real doodle, I noticed the counts don't automatically update when the current user adds their times, so I also implemented the feature this way; this also distinguishes it from when2meet where the counts are updated live
 
 ![Screenshot of submit option](img/screenshot2.png)
 
