@@ -25,5 +25,7 @@ Open [webpage](https://catherinesyeh.github.io/doodle/) to start exploring. The 
 * Both platforms have editing capability, but on when2meet, it's more implicit, as there's no submit, and on doodle, you have to explicitly press a button to update your response & then resubmit
 * _Note:_ this is probably not as important of a distinguishing feature
 
+*Click [here](https://github.com/catherinesyeh/when2meet) to read more about when2meet and doodle's distinguishing features and see my **when2meet** implementation.*
+
 ## other notes
 This UI was implemented from scratch, without using a tutorial. I did use the [tinysort](https://tinysort.sjeiti.com/) library to help with sorting in my code. I focused on the inputting availability aspects of both platforms, so I didn't incorporate differences in login, calendar syncing, etc.
