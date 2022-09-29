@@ -26,4 +26,4 @@ Open [webpage](https://catherinesyeh.github.io/doodle/) to start exploring. The 
 * _Note:_ this is probably not as important of a distinguishing feature
 
 ## other notes
-This UI was implemented from scratch, without using a tutorial. I focused on the inputting availability aspects of both platforms, so I didn't incorporate differences in login, calendar syncing, etc.
+This UI was implemented from scratch, without using a tutorial. I did use the [tinysort](https://tinysort.sjeiti.com/) library to help with sorting in my code. I focused on the inputting availability aspects of both platforms, so I didn't incorporate differences in login, calendar syncing, etc.
